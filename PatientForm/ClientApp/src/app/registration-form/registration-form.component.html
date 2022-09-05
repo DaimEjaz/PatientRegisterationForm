@@ -1,0 +1,61 @@
+<form [formGroup]="registerationForm" class="form">
+  <div class="form-control">
+    <label for="">Name: </label>
+    <input type="text" />
+  </div>
+  <div class="form-control">
+    <label for="">Email: </label>
+    <input type="text" />
+  </div>
+  <div class="form-control">
+    <label for="">Date of Birth: </label>
+    <input type="date" />
+  </div>
+  <div class="form-control">
+    <label for="">Gender</label>
+    <div class="dropdown">
+      <select formControlName="gender" id="genderDropdown">
+        <!-- Default option -->
+        <option [ngValue]="null">--select--</option>
+        <option value="male" [ngValue]="gender">Male</option>
+        <option value="female" [ngValue]="gender">Female</option>
+        <option value="undisclosed" [ngValue]="gender">
+          Prefer not to say
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="form-control">
+    <label for="">Country</label>
+    <div class="dropdown">
+      <select formControlName="country" id="countryDropdown">
+        <!-- Default option -->
+        <option [ngValue]="null">--select--</option>
+        <option value="USA" [ngValue]="country">USA</option>
+        <option value="UAE" [ngValue]="country">UAE</option>
+        <option value="UK" [ngValue]="country">UK</option>
+        <option value="Pakistan" [ngValue]="country">Pakistan</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-control">
+    <label for="">Address</label>
+    <input type="text" />
+  </div>
+  <div class="form-control">
+    <label for="">Contact Details: </label>
+    <div class="dropdown">
+      <select formControlName="contact" id="contactDropdown">
+        <!-- Default option -->
+        <option [ngValue]="null">--select--</option>
+        <option value="mobileNum" [ngValue]="contactType">Mobile number</option>
+        <option value="landlineNum" [ngValue]="contactType">Landline</option>
+        <option value="officeNum" [ngValue]="contactType">Office number</option>
+        <option value="homeNum" [ngValue]="contactType">Home number</option>
+      </select>
+      <div class="contact-number">
+        <input type="text">
+      </div>
+    </div>
+  </div>
+</form>

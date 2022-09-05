@@ -1,0 +1,37 @@
+
+
+
+.form{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.form-control{
+    display: flex;
+    border: none;
+    width: 100%;
+}
+
+
+.form-control label{
+    padding-right: 50px;
+    justify-self: flex-start;
+}
+
+
+.form-control input, select{
+    justify-self: flex-end;
+    margin-left: auto;
+    width: 200px;
+    height:30px
+}
+
+#genderDropdown,
+#countryDropdown,
+#countryDropdown{
+    margin-left: 150px;
+}
